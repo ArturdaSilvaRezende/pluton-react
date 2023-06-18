@@ -18,5 +18,18 @@ ul > li {
 }
 
 button {
+  background-color: transparent;
+  border: none;
   cursor: pointer;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+:root {
+  --color-black: #181a1c;
+  --color-yellow: #fece1a;
+  --color-white: #fff;
 }
