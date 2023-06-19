@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay, Pagination } from 'swiper';
-import CarouselList from './CarouselList';
+import CarouselList from '../../mocks/carousel_list';
 import Left from '../../assets/images/carousel/Left.png';
 import Right from '../../assets/images/carousel/Right.png';
 
