@@ -60,6 +60,8 @@ export const HeaderNav = styled.div`
   }
 
   nav {
+    z-index: 999;
+
     ul {
       display: flex;
       justify-content: space-between;
