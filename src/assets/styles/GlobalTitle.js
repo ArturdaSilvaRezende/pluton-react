@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 
 const GlobalTitle = styled.div`
-  padding: 50px 0;
+  border-bottom: 1px solid ${(props) => props.line};
+  padding-top: 50px;
+  margin: 0 auto 50px auto;
+  width: 90%;
   text-align: center;
 
   h1 {
@@ -12,12 +15,6 @@ const GlobalTitle = styled.div`
     color: ${(props) => props.subtitle};
     font-size: 1.4rem;
     margin: 20px auto;
-    width: 90%;
-  }
-  hr {
-    background-color: ${(props) => props.line};
-    height: 2px;
-    margin: 0 auto;
     width: 90%;
   }
 

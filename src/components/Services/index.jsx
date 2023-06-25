@@ -22,7 +22,6 @@ const Services = () => {
           Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque
           dapibus in purus in dignissim.
         </h2>
-        <hr />
       </GlobalTitle>
       <C.ServicesContent>
         {services.map((item) => (
