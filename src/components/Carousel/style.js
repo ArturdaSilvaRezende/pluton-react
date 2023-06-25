@@ -173,7 +173,7 @@ export const Carousel = styled.section`
       }
       .mySwiper__item {
         flex-direction: column;
-        margin: 100px 0 20px 0;
+        margin: 60px 0 20px 0;
 
         .mySwiper__description {
           text-align: center;

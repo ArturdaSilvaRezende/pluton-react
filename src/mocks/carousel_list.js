@@ -1,6 +1,6 @@
-import Slider01 from '../../assets/images/carousel/Slider01.png';
-import Slider02 from '../../assets/images/carousel/Slider02.png';
-import Slider03 from '../../assets/images/carousel/Slider03.png';
+import Slider01 from '../assets/images/carousel/Slider01.png';
+import Slider02 from '../assets/images/carousel/Slider02.png';
+import Slider03 from '../assets/images/carousel/Slider03.png';
 
 const CarouselList = [
   {
