@@ -242,7 +242,6 @@ export const AboutUsContainer = styled.div`
       font-size: clamp(12px, 2vw, 17.5px);
       margin: 15px auto;
       padding: 10px;
-      font-weight: 100;
     }
 
     button {

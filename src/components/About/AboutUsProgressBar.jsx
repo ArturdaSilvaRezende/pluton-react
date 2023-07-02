@@ -6,7 +6,7 @@ const AboutUsProgressBar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
-      const windowHeight = window.scrollY + (window.innerHeight * 3) / 4;
+      const windowHeight = window.scrollY + window.innerHeight;
       const activationHeight = windowHeight * 0.8;
       setIsVisible(scrollTop > activationHeight);
     };
