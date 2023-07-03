@@ -18,18 +18,20 @@ export const Carousel = styled.section`
   }
 
   .mySwiper {
-    .swiper-button-next,
-    .swiper-button-prev {
+    .carousel__button-next,
+    .carousel__button-prev {
       background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
       bottom: 0;
       height: 100vh;
       top: 0;
       width: 60px;
       transition: 0.3s ease;
+      z-index: 2;
 
       img {
         position: absolute;
-        top: 200px;
+        top: 120px;
         width: 40px;
       }
 
@@ -38,20 +40,29 @@ export const Carousel = styled.section`
       }
     }
 
-    .swiper-button-next {
+    .carousel__button-next {
       right: 0;
 
-      &::after {
-        display: none;
+      img {
+        right: 5px;
       }
-    }
-    .swiper-button-prev {
-      left: 0;
 
       &::after {
         display: none;
       }
     }
+    .carousel__button-prev {
+      left: 0;
+
+      img {
+        left: 5px;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+
     .mySwiper__item {
       display: flex;
       align-items: center;
@@ -97,8 +108,8 @@ export const Carousel = styled.section`
 
       .mySwiper__img {
         img {
-          object-fit: cover;
-          width: 70%;
+          object-fit: contain;
+          width: 50%;
         }
       }
     }
@@ -106,8 +117,8 @@ export const Carousel = styled.section`
 
   @media screen and (min-width: 993px) and (max-width: 1024px) {
     .mySwiper {
-      .swiper-button-next,
-      .swiper-button-prev {
+      .carousel__button-next,
+      .carousel__button-prev {
         img {
           top: 130px;
         }
@@ -117,10 +128,11 @@ export const Carousel = styled.section`
 
   @media screen and (min-width: 768px) and (max-width: 992px) {
     .mySwiper {
-      .swiper-button-next,
-      .swiper-button-prev {
+      .carousel__button-next,
+      .carousel__button-prev {
         img {
-          top: 130px;
+          width: 30px;
+          top: 120px;
         }
       }
 
@@ -149,7 +161,7 @@ export const Carousel = styled.section`
           width: 50%;
 
           img {
-            width: 70%;
+            width: 60%;
           }
         }
       }
@@ -161,14 +173,20 @@ export const Carousel = styled.section`
     background-position: center center;
 
     .mySwiper {
-      .swiper-button-next,
-      .swiper-button-prev {
-        width: 40px;
+      .carousel__button-next,
+      .carousel__button-prev {
+        background-color: rgba(0, 0, 0, 0.1);
         height: auto;
+        width: 37px;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.2);
+        }
 
         img {
           width: 20px;
-          top: 300px;
+          top: 50%;
+          transform: translateY(-50%);
         }
       }
       .mySwiper__item {
@@ -199,8 +217,9 @@ export const Carousel = styled.section`
 
         .mySwiper__img {
           img {
+            object-fit: contain;
             margin: 30px auto 0 auto;
-            width: 70%;
+            width: 50%;
           }
         }
       }

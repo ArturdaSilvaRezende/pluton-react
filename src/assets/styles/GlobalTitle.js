@@ -7,6 +7,11 @@ const GlobalTitle = styled.div`
   width: 90%;
   text-align: center;
 
+  h1,
+  h2 {
+    font-weight: 400;
+  }
+
   h1 {
     color: ${(props) => props.title};
     font-size: 3rem;

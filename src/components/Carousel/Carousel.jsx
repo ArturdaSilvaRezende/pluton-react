@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay, Pagination } from 'swiper';
 import CarouselList from '../../mocks/carousel_list';
@@ -7,9 +7,20 @@ import Right from '../../assets/images/carousel/Right.png';
 
 const CarouselContent = () => {
   const [carouselItem, setCarouselItem] = useState([]);
+  const carouselRef = useRef(null);
 
   useEffect(() => {
     setCarouselItem(CarouselList);
+  }, []);
+
+  const handleNext = useCallback(() => {
+    if (!carouselRef.current) return;
+    carouselRef.current.swiper.slideNext();
+  }, []);
+
+  const handlePrev = useCallback(() => {
+    if (!carouselRef.current) return;
+    carouselRef.current.swiper.slidePrev();
   }, []);
 
   return (
@@ -21,13 +32,9 @@ const CarouselContent = () => {
           disableOnInteraction: false,
         }}
         modules={[Navigation, Autoplay, Pagination]}
-        navigation={{
-          navigation: true,
-          prevEl: '.swiper-button-prev',
-          nextEl: '.swiper-button-next',
-        }}
         pagination={true}
         className="mySwiper"
+        ref={carouselRef}
       >
         {carouselItem.map((item) => (
           <SwiperSlide key={item.id} className="mySwiper__item">
@@ -42,10 +49,10 @@ const CarouselContent = () => {
             </figure>
           </SwiperSlide>
         ))}
-        <button className="swiper-button-prev">
+        <button className="carousel__button-prev" onClick={handlePrev}>
           <img src={Left} alt="button-icon-left" />
         </button>
-        <button className="swiper-button-next">
+        <button className="carousel__button-next" onClick={handleNext}>
           <img src={Right} alt="button-icon-right" />
         </button>
       </Swiper>
