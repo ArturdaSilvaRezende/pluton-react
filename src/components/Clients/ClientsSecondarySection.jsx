@@ -20,7 +20,7 @@ const ClientsSecondarySection = () => {
         <h1>What Client Say?</h1>
         <h2>
           Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque
-          dapibus in purus in dignissim.s
+          dapibus in purus in dignissim.
         </h2>
       </GlobalTitle>
       <div className="clients__cards">
