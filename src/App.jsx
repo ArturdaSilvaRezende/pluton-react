@@ -7,6 +7,7 @@ import Portfolio from './components/Portfolio';
 import About from './components/About';
 import Client from './components/Clients';
 import OurClients from './components/OurClients';
+import Price from './components/Price';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <About />
         <Client />
         <OurClients />
+        <Price />
       </main>
     </>
   );
