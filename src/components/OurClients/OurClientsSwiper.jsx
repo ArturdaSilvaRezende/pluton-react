@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { FreeMode, Pagination, Navigation } from 'swiper';
+import { FreeMode, Navigation } from 'swiper';
 import OurClientsTitle from './OurClientsTitle';
 import OurClientsList from '../../mocks/ourclients_list';
 import * as C from './style';
