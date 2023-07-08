@@ -154,6 +154,10 @@ export const ContactUsMapForm = styled.form`
     padding: 10px 0 10px 15px;
   }
 
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    width: 100%;
+  }
+
   @media screen and (max-width: 767px) {
     margin-bottom: 30px;
     width: 100%;

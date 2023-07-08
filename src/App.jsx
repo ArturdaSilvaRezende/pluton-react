@@ -1,6 +1,4 @@
 import Header from './components/Header';
-
-//Main Contents
 import Carousel from './components/Carousel';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
@@ -9,13 +7,14 @@ import Client from './components/Clients';
 import OurClients from './components/OurClients';
 import Price from './components/Price';
 import ContactUs from './components/ContactUs';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
     <>
       <Header />
+      <Carousel />
       <main>
-        <Carousel />
         <Services />
         <Portfolio />
         <About />
@@ -24,6 +23,7 @@ const App = () => {
         <Price />
         <ContactUs />
       </main>
+      <Footer />
     </>
   );
 };
