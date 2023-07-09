@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const GlobalTitle = styled.div`
   border-bottom: 1px solid ${(props) => props.line};
-  padding-top: 50px;
+  padding-top: 75px;
   margin: 0 auto 50px auto;
   width: 90%;
   text-align: center;

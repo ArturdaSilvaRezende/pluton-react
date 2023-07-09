@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Portfolio = styled.section`
   background-color: var(--color-yellow);
+  margin-bottom: -40px;
   padding-bottom: 50px;
 
   .active {

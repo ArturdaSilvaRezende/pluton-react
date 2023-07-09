@@ -1,0 +1,10 @@
+.scroll-element {
+  opacity: 0;
+  transition: 0.6s ease;
+  transform: translate3d(-50%, 50px, 0);
+}
+
+.visible {
+  opacity: 1;
+  transform: translate3d(-50%, 0px, 0);
+}

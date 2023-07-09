@@ -5,6 +5,7 @@ export const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: -40px;
   padding: 15px;
 
   .header__logo {
@@ -73,7 +74,6 @@ export const HeaderNav = styled.div`
           color: var(--color-white);
           cursor: pointer;
           display: block;
-          font-weight: 700;
           padding: 10px;
           transition: 0.5s ease;
           text-transform: uppercase;

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Services = styled.section`
   background-color: var(--color-black);
+  margin-bottom: -40px;
   padding-bottom: 50px;
 `;
 
