@@ -8,6 +8,7 @@ import OurClients from './components/OurClients';
 import Price from './components/Price';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
+import BtnBackToTop from './components/BtnBackToTop';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <ContactUs />
       </main>
       <Footer />
+      <BtnBackToTop />
     </>
   );
 };

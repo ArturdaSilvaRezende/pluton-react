@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const ClientsPrimarySection = styled.section`
   background-color: var(--color-yellow);
-  padding: 50px 20px;
+  margin-bottom: -40px;
+  padding: 90px 20px 30px 20px;
   text-align: center;
 
   h1 {
