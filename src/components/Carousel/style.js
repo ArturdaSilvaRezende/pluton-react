@@ -109,7 +109,7 @@ export const Carousel = styled.section`
       .mySwiper__img {
         img {
           object-fit: contain;
-          width: 50%;
+          width: 45%;
         }
       }
     }
@@ -144,16 +144,17 @@ export const Carousel = styled.section`
           width: 70%;
 
           h1 {
-            font-size: 1.4rem;
+            font-size: 1.1rem;
           }
 
           h2 {
-            font-size: 1.2rem;
+            font-size: 1rem;
           }
 
           p {
             margin: 20px auto;
-            width: 80%;
+            width: 70%;
+            font-size: 14px;
           }
         }
 
@@ -161,7 +162,7 @@ export const Carousel = styled.section`
           width: 50%;
 
           img {
-            width: 60%;
+            width: 55%;
           }
         }
       }
@@ -205,7 +206,7 @@ export const Carousel = styled.section`
           }
 
           p {
-            font-size: 0.95rem;
+            font-size: 0.8rem;
             margin: 20px auto;
             width: 65%;
           }
@@ -218,8 +219,8 @@ export const Carousel = styled.section`
         .mySwiper__img {
           img {
             object-fit: contain;
-            margin: 30px auto 0 auto;
-            width: 50%;
+            margin: 15px auto 15px auto;
+            width: 35%;
           }
         }
       }

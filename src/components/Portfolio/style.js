@@ -4,34 +4,12 @@ export const Portfolio = styled.section`
   background-color: var(--color-yellow);
   margin-bottom: -40px;
   padding-bottom: 50px;
-
-  .active {
-    background-color: var(--color-black);
-    color: var(--color-white);
-    font-weight: bold;
-  }
-
-  .zoomIn {
-    animation-name: zoomIn;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-  }
-  @keyframes zoomIn {
-    0% {
-      opacity: 0;
-      transform: scale3d(0.3, 0.3, 0.3);
-    }
-    50% {
-      opacity: 1;
-    }
-  }
 `;
 
 export const PortfolioContainer = styled.div`
   display: flex;
+  gap: 10px;
   flex-wrap: wrap;
-  margin: 0 auto;
-  width: 90%;
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
@@ -41,7 +19,7 @@ export const PortfolioContainer = styled.div`
 export const PortfolioItem = styled.figure`
   position: relative;
   margin: 30px auto 0 auto;
-  width: 33%;
+  width: 32%;
 
   figcaption {
     .portfolio__description {
@@ -119,6 +97,7 @@ export const PortfolioItem = styled.figure`
   }
 
   @media screen and (min-width: 768px) and (max-width: 992px) {
+    margin: 10px auto 0 auto;
     width: 48%;
 
     figcaption {
@@ -162,8 +141,7 @@ export const PortfolioItem = styled.figure`
 
 export const PortfolioNavpill = styled.div`
   display: flex;
-
-  margin: -20px auto 0 auto;
+  margin: -20px auto 30px auto;
   width: 90%;
 
   button {

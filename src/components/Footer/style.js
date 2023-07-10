@@ -16,10 +16,8 @@ export const Footer = styled.footer`
 
   .footer__copright {
     border-top: 1px solid var(--color-white);
-    margin: 0 auto;
     padding-top: 30px;
     text-align: center;
-    width: 90%;
 
     p {
       color: var(--color-white);
@@ -42,8 +40,7 @@ export const FooterContainer = styled.div`
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
-  margin: 0 auto 50px auto;
-  width: 90%;
+  margin-bottom: 50px;
 
   .footer__item {
     h2 {

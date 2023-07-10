@@ -1,3 +1,4 @@
+import { Container } from '../../assets/styles/Container';
 import * as C from './style';
 
 const ContactUsNewsletter = () => {

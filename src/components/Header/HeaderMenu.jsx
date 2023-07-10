@@ -12,7 +12,7 @@ const HeaderNav = () => {
   };
 
   const handleResize = () => {
-    setIsMenuOpen(window.innerWidth > 800);
+    setIsMenuOpen(window.innerWidth > 821);
   };
 
   useEffect(() => {

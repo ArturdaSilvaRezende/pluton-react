@@ -7,10 +7,7 @@ export const OurClients = styled.section`
   padding: 50px 0;
 `;
 
-export const OurClientsContents = styled.div`
-  margin: 0 auto;
-  width: 90%;
-`;
+export const OurClientsContents = styled.div``;
 
 export const OurClientsTitle = styled.div`
   border-bottom: 1px solid var(--color-white);

@@ -1,0 +1,62 @@
+/* ============== GLOBAL ============== */
+
+.active {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-weight: bold;
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomInUp {
+  animation-name: zoomInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes zoomInUp {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  60% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+/* ============== Navigation Menu ============== */
+
+.menu__fadein {
+  animation-name: menufadein;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  width: 100%;
+  z-index: 999;
+}
+
+@keyframes menufadein {
+  0% {
+    opacity: 0;
+    top: -50px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}

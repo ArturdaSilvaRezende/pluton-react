@@ -4,38 +4,25 @@ export const About = styled.section`
   background-color: var(--color-black);
   margin-bottom: -40px;
   padding-bottom: 50px;
-
-  .zoomIn {
-    animation-name: zoomIn;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-  }
-
-  @keyframes zoomIn {
-    0% {
-      opacity: 0;
-      transform: scale3d(0.3, 0.3, 0.3);
-    }
-    50% {
-      opacity: 1;
-    }
-  }
 `;
 
 export const AboutCards = styled.div`
   display: flex;
-  margin: 0 auto;
-  width: 90%;
+  justify-content: center;
 
   figure {
     border: 1px solid var(--color-white);
-    flex-grow: 1;
     padding: 10px;
     position: relative;
     width: 30%;
 
     & + figure {
       margin-left: 15px;
+    }
+
+    img {
+      margin: 20px auto 0 auto;
+      width: 80%;
     }
 
     figcaption {
@@ -77,11 +64,13 @@ export const AboutCards = styled.div`
       background-color: rgba(255, 255, 0, 0.7);
       text-align: center;
       position: absolute;
-      left: 10px;
-      right: 10px;
-      top: 10px;
+      left: 0;
+      right: 0;
+      top: 30px;
       bottom: 178px;
       transition: all 0.5s ease-in;
+      margin: 0 auto;
+      width: 76%;
 
       h3 {
         font-size: 1.5rem;
@@ -91,15 +80,22 @@ export const AboutCards = styled.div`
       p {
         font-size: 1.2rem;
         margin: 0 auto;
-        width: 80%;
+        width: 90%;
       }
     }
   }
 
   @media screen and (min-width: 768px) and (max-width: 992px) {
     figure {
+      img {
+        margin: 5px auto 0 auto;
+        width: 90%;
+      }
+
       .about_description {
         bottom: 177px;
+        top: 10px;
+        width: 82%;
 
         p {
           font-size: 0.9rem;
@@ -118,8 +114,17 @@ export const AboutCards = styled.div`
         margin: 20px 0 0 0;
       }
 
+      img {
+        margin: 0;
+        width: 100%;
+      }
+
       .about_description {
         bottom: 178px;
+        left: 10px;
+        right: 10px;
+        top: 10px;
+        width: auto;
       }
     }
   }

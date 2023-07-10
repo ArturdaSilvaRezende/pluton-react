@@ -8,8 +8,6 @@ export const Services = styled.section`
 
 export const ServicesContent = styled.div`
   display: flex;
-  margin: 0 auto;
-  width: 90%;
 
   figure {
     text-align: center;

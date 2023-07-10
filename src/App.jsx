@@ -9,6 +9,7 @@ import Price from './components/Price';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import BtnBackToTop from './components/BtnBackToTop';
+import './assets/styles/animations.css';
 
 const App = () => {
   return (

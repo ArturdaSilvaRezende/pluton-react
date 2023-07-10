@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ClientsPrimarySection = styled.section`
+export const ClientsPrimarySection = styled.div`
   background-color: var(--color-yellow);
   margin-bottom: -40px;
   padding: 90px 20px 30px 20px;
@@ -25,15 +25,13 @@ export const ClientsPrimarySection = styled.section`
   }
 `;
 
-export const ClientsSecondarySection = styled.section`
+export const ClientsSecondarySection = styled.div`
   background-color: var(--color-black);
 
   .clients__cards {
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(3, 1fr);
-    margin: 0 auto;
-    width: 90%;
 
     figure {
       figcaption {

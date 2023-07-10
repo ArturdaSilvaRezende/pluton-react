@@ -25,13 +25,13 @@ export const Triangle = styled.div`
   @media screen and (min-width: 768px) and (max-width: 992px) {
     border-left: 370px solid transparent;
     border-right: 370px solid transparent;
-    top: 39px;
+    top: 38px;
   }
 
   @media screen and (min-width: 600px) and (max-width: 767px) {
     border-left: 280px solid transparent;
     border-right: 280px solid transparent;
-    top: 40px;
+    top: 39px;
   }
 
   @media screen and (min-width: 281px) and (max-width: 599px) {
